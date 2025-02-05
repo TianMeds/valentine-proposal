@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Selection</title>
+    <link rel="stylesheet" href="css/flower.css" />
+    <style>
+      *,
+      *::after,
+      *::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #FFF5E4;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: hidden;
+        color: #FF9494;
+        font-family: courier;
+      }
+
+      #flowerquestion {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 30px;
+      }
+
+      .flower-selection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .flower-item {
+        text-align: center;
+      }
+
+      .flower-item img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #FF9494;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: #FF7373;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="flowerquestion">Which flower do you like?</div>
+
+    <div class="flower-selection">
+      <div class="flower-item">
+        <img src="https://m.media-amazon.com/images/I/61ks-gDrhxL._AC_SL1000_.jpg" alt="rose" />
+        <label><input type="checkbox" name="flower" value="rose" /> Rose</label>
+      </div>
+      <div class="flower-item">
+        <img src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3VuZmxvd2VyfGVufDB8fDB8fHww" alt="sunflower" />
+        <label><input type="checkbox" name="flower" value="sunflower" /> Sunflower</label>
+      </div>
+      <div class="flower-item">
+        <img src="https://cdn.sanity.io/images/pn4rwssl/production/59c9dcc506862017ff8d7c237673bdafeba27487-500x750.jpg?w=2880&q=75&auto=format" alt="tulip" />
+        <label><input type="checkbox" name="flower" value="tulip" /> Tulip</label>
+      </div>
+    </div>
+    <button class="button" onclick="location.href='food.html'">
+      Continue UWU
+    </button>
+  </body>
+</html>
